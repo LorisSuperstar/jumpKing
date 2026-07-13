@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-@export var speed = 100
+@export var speed = 75
 @onready var animated_sprite = $AnimatedSprite2D
 
 var can_jump = true
@@ -42,10 +42,10 @@ func _physics_process(delta):
 	elif loading_up == true or jump_meter >= 100:
 		if Input.is_action_pressed("move_right"): 
 			animated_sprite.flip_h = false
-			velocity.x += speed * 2
+			velocity.x += speed * 3
 		if Input.is_action_pressed("move_left"): 
 			animated_sprite.flip_h = true
-			velocity.x -= speed * 2
+			velocity.x -= speed * 3
 		
 		if jump_meter < 20:
 			velocity.y -= (20 * 5)
