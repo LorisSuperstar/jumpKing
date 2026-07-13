@@ -16,7 +16,8 @@ func _physics_process(delta):
 		velocity.x = 0
 	else: 
 		can_jump = false
-		
+		animated_sprite.play("Jumping")
+		animated_sprite.frame = 2
 	
 	if Input.is_action_pressed("move_right") and loading_up == false and can_jump == true:
 		velocity.x += speed
