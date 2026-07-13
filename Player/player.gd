@@ -45,4 +45,4 @@ func _physics_process(delta):
 	
 	if is_on_wall() and not is_on_floor():
 		velocity.x = -pre_bounce_velocity_x * 0.5
-		velocity.y = velocity.y / 2
+		velocity.y = velocity.y / 1.5
