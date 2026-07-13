@@ -11,7 +11,8 @@ func _physics_process(delta):
 	
 	
 	if (is_on_floor()): 
-		animated_sprite.play("Idle")
+		if velocity.x == 0:
+			animated_sprite.play("Idle")
 		can_jump = true
 		velocity.x = 0
 	else: 
@@ -22,13 +23,21 @@ func _physics_process(delta):
 	if Input.is_action_pressed("move_right") and loading_up == false and can_jump == true:
 		velocity.x += speed
 		animated_sprite.flip_h = false
+		animated_sprite.play("Running")
 	if Input.is_action_pressed("move_left") and loading_up == false and can_jump == true:
 		velocity.x -= speed
 		animated_sprite.flip_h = true
+		animated_sprite.play("Running")
 	if Input.is_action_pressed("jump") and can_jump == true and jump_meter < 100:
 		loading_up = true
 		jump_meter += 2
 		print(jump_meter)
+		
+		animated_sprite.play("Charging")
+		if jump_meter < 50: 
+			animated_sprite.frame = 0
+		else:
+			animated_sprite.frame = 1
 		
 	elif loading_up == true or jump_meter >= 100:
 		if Input.is_action_pressed("move_right"): 
