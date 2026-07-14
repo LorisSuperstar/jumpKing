@@ -2,6 +2,7 @@ extends CharacterBody2D
 
 @export var speed = 75
 @onready var animated_sprite = $AnimatedSprite2D
+@onready var jump_sound = $JumpSound
 
 var can_jump = true
 var jump_meter = 0
@@ -48,8 +49,10 @@ func _physics_process(delta):
 			velocity.x -= speed * 3
 		
 		if jump_meter < 20:
+			jump_sound.play()
 			velocity.y -= (20 * 5)
 		else:
+			jump_sound.play()
 			velocity.y -= (jump_meter * 5)
 		loading_up = false
 		jump_meter = 0;
