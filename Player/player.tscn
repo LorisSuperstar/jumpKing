@@ -186,3 +186,4 @@ stream = ExtResource("5_k53q1")
 
 [node name="WalkingSound" type="AudioStreamPlayer2D" parent="." unique_id=1975749031]
 stream = ExtResource("6_fhl08")
+volume_db = 5.45
