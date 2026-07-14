@@ -5,6 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://ci1q7j0voosrw" path="res://Player/Blue-Blob-Idle.png" id="3_k53q1"]
 [ext_resource type="Texture2D" uid="uid://dwescf8rsllhi" path="res://Player/Blue-Blob-Run.png" id="4_fhl08"]
 [ext_resource type="AudioStream" uid="uid://cbvcb7mwwb3i5" path="res://Player/SFX_Jump_16.wav" id="5_k53q1"]
+[ext_resource type="AudioStream" uid="uid://cmgytutdrsso3" path="res://Player/DIRT - Hard Walk 7.wav" id="6_fhl08"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_vtle1"]
 atlas = ExtResource("2_gwnis")
@@ -182,3 +183,6 @@ metadata/_edit_group_ = true
 
 [node name="JumpSound" type="AudioStreamPlayer2D" parent="." unique_id=192073729]
 stream = ExtResource("5_k53q1")
+
+[node name="WalkingSound" type="AudioStreamPlayer2D" parent="." unique_id=1975749031]
+stream = ExtResource("6_fhl08")
