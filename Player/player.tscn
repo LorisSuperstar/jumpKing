@@ -162,7 +162,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_00tjw"]
-size = Vector2(4.5, 8.06452)
+size = Vector2(3.75, 7.661294)
 
 [node name="Player" type="CharacterBody2D" unique_id=1211196818]
 position = Vector2(1, -1)
@@ -170,13 +170,13 @@ scale = Vector2(2, 2)
 script = ExtResource("1_onrkg")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=13525514]
-position = Vector2(0.5, 0)
 scale = Vector2(0.5026042, 0.5)
 sprite_frames = SubResource("SpriteFrames_g4v7s")
-animation = &"Charging"
+animation = &"Idle"
+offset = Vector2(1, 0)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=743465477]
-position = Vector2(-0.75, 2.9999998)
+position = Vector2(-0.625, 3.2500002)
 scale = Vector2(1, 1.2399994)
 shape = SubResource("RectangleShape2D_00tjw")
 metadata/_edit_group_ = true
