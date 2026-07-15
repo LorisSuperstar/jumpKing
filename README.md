@@ -1,1 +1,1 @@
-Playtime: 1 H 50 min  till second last stage, after then the tester gave up
+Playtime: 1 H 50 min till the second last stage, after that the tester gave up
