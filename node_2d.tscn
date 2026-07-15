@@ -1187,7 +1187,7 @@ stretch_mode = 5
 metadata/_edit_use_anchors_ = true
 
 [node name="Player" parent="." unique_id=1211196818 instance=ExtResource("1_wtcfe")]
-position = Vector2(323, 331)
+position = Vector2(252.00002, 423)
 scale = Vector2(3, 3)
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1602258700]
