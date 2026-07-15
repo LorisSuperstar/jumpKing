@@ -1221,3 +1221,10 @@ offset_top = 298.0
 offset_right = 496.0
 offset_bottom = 321.0
 text = "Arrow Keys to move left and right, Space to jump"
+
+[node name="Label3" type="Label" parent="." unique_id=1835109644]
+offset_left = 59.0
+offset_top = -136.0
+offset_right = 417.0
+offset_bottom = -113.0
+text = "There is a Treasure waiting for you at the top"
